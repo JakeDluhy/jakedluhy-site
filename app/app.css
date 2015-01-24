@@ -1,30 +1,125 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+h1,h2,h3,h4,h5,h6, ul {
+  margin: 0;
 }
 
-.menu:before {
-  content: "[";
+a {
+  text-decoration: none;
+  color: #d1c4e9;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-.menu:after {
-  content: "]";
+html,
+button,
+input,
+select,
+textarea {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.menu > li {
-  display: inline;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.right {
+  float: right;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.top-bar {
+  background: #512da8;
+  overflow: hidden;
+  height: 40px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+}
+
+.top-bar h3 {
+  margin: 5px 10px;
+  float: left;
+}
+
+.top-bar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-bar-section > ul {
+  margin: 5px;
+  height: 100%;
+}
+
+.top-bar-section > ul > li {
+  display: inline-block;
+  margin: 0 5px;
+  height: 100%;
+}
+
+.top-bar-section > ul > li > a {
+  font-size: 16px;
+  background: #512da8;
+  vertical-align: middle;
+}
+
+/*About styling*/
+.about-wrapper, .projects-wrapper, .posts-wrapper {
+  width: 800px;
+  margin: 10px auto;
+}
+.bio-wrapper, .contact-wrapper, .project-template, .post-template {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.content-name {
+
+}
+.bio-wrapper > img {
+  max-width: 200px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.content {
+  text-align: justify;
+}
+
+/*Projects stylings*/
+.project-url {
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.project-template > img, .post-template > img {
+  max-width: 15%;
+  float: left;
+  margin-right: 10px;
+}
+
+
+/*Posts stylings*/
+.post-template {
+  overflow: hidden;
+}
+.post-wrapper {
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.post-thumb {
+  max-width: 200px;
+  float:left;
+  margin: 0 10px 10px 0;
+}
+.content > h4, .content>h6 {
+  text-align: right;
+  margin-top: 0;
 }

@@ -1,0 +1,22 @@
+<div class="about-wrapper">
+	<div class="bio-wrapper">
+		<img ng-src="{{bio.picURL}}">
+		<div class="content">
+			<h3 class="content-name">{{bio.name}}</h3>
+			<div class="content-description" ng-repeat="paragraph in bio.bioContent">
+				<p>{{paragraph}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="contact-wrapper">
+		<div class="contact">
+		<h3>Contact Me</h3>
+			<div class="profile-links">
+				<p>Email - The best way to reach me: <a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a></p>
+				<p>LinkedIn: <a href="{{contactInfo.linkedin}}">Profile</a> - I'm fairly inactive on LinkedIn, but certainly connect with me if you would like to talk professionally.</p>
+				<p>Github: <a href="{{contactInfo.github}}">Portfolio</a> - Pretty much everything I've done is on here. Although I haven't contributed to any open source projects, that's something I'd like to do in the future as I become a better programmer.</p>
+				<p>Stack Overflow: <a href="{{contactInfo.stackOverflow}}">Account</a> - Like Github, I want to spend more time on Stack helping people out. Time is so short....</p>
+			</div>
+		</div>
+	</div>
+</div>

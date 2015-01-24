@@ -1,0 +1,21 @@
+[{
+	"name": "HigherEd",
+	"imgURL": "server/pics/highered.png",
+	"url": "http://www.thisishighered.com/",
+	"description": "HigherEd is the startup I've been working on for the last three months. Right now, it has demos of interactive animations and visualization tools that can be used to help teach Calculus. The goal is to make it into a platform that teachers, tutors, and students could use to create interactive content for each other. Ultimately, the idea is to make a platform that could completely eliminate the need for basic textbooks. It is built using Node.js for the server, MongoDB for the database, and Ember.js for the frontend framework."
+}, {
+	"name": "Illinois Robotics in Space",
+	"imgURL": "server/pics/iris.png",
+	"url": "https://irisengineering.herokuapp.com/",
+	"description": "The Illinois Robotics in Space website is a project I've been working on for a club at my school. Our goal is to build an autonomous mining robot for a NASA competition this Spring. It's a massively difficult task, and being a student organization it is also difficult to manage 20-30 extremely busy overachievers. The thought was that making a web application could help manage students and organize the club. It is built using Ruby on Rails for the server, PostGreSQL for the database, and a little bit of Backbone.js/Marionette.js for the front page."
+}, {
+	"name": "Quadrotor Control",
+	"imgURL": "server/pics/quadrotor.png",
+	"url": "http://quadrotor-tutorial.divshot.io/",
+	"description": "This is a project that I worked on for a class that I took in graphics programming. My goal was to create a small textbook type website that could teach the everyday person a little bit about how it is that quadrotors work. It does this by making games and animations out of the lessons, so that people can read about a concept and then play around with it. This is obviously similar to HigherEd, and in a way it spawned my ideas about making an education platform. One day I hope to combine these two projects in some way. This is built using static webpages, with a little bit of jQuery to help manage the app, and a lot of Javascript using the THREE.js library to control the animated quadrotor."
+}, {
+	"name": "Website/Blog",
+	"imgURL": "server/pics/website.jpg",
+	"url": "http://jakedluhy.com",
+	"description": "I've wanted to make a portfolio/blog for a long time, and the desire to learn Angular was the impetus I needed to get down and create it. This site is static assets, with the frontend framework managed using Angular, and the information stored in json files."
+}]
