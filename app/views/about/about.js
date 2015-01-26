@@ -13,6 +13,9 @@ angular.module('myApp.about', ['ngRoute'])
 	$http.get('server/about/bio.json').success(function(data) {
 		$scope.bio = data;
 	});
+	$http.get('server/projects/projects.json').success(function(projects) {
+		$scope.projects = projects;
+	});
 	$http.get('server/about/contact.json').success(function(data) {
 		$scope.contactInfo = data;
 	});

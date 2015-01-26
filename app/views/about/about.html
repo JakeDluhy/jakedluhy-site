@@ -1,22 +1,50 @@
-<div class="about-wrapper">
-	<div class="bio-wrapper">
+<nav class="top-bar" role="navigation">
+  <h3><a href="#/about">Jake Dluhy</a></h3>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="mailto:{{contactInfo.email}}"><i class="fa fa-envelope-o"></i></a></li>
+      <li><a href="{{contactInfo.linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="{{contactInfo.github}}"><i class="fa fa-github"></i></a></li>
+      <li><a href="{{contactInfo.stackOverflow}}"><i class="fa fa-stack-overflow"></i></a></li>
+    </ul>
+  </section>
+</nav>
+
+<div class="splash-div welcome">
+	<div class="welcome-content">
+		<h1>Hi, I'm Jake</h1>
+		<h3>Entrepreneur, Programmer, and Adventurer</h3>
+	</div>
+</div>
+<div class="splash-div about">
+	<div class="headshot-container">
 		<img ng-src="{{bio.picURL}}">
-		<div class="content">
-			<h3 class="content-name">{{bio.name}}</h3>
-			<div class="content-description" ng-repeat="paragraph in bio.bioContent">
-				<p>{{paragraph}}</p>
-			</div>
+	</div>
+	<div class="info-container" ng-repeat="paragraph in bio.bioContent">
+	<p>{{paragraph}}</p>
+	</div>
+</div>
+<div class="splash-div projects">
+	<h1>Projects</h1>
+	<div class="project-wrapper" ng-repeat="project in projects">
+		<div class="project-image">
+			<a href="{{project.url}}"><img ng-src="{{project.imgURL}}"></a>
 		</div>
 	</div>
-	<div class="contact-wrapper">
-		<div class="contact">
-		<h3>Contact Me</h3>
-			<div class="profile-links">
-				<p>Email - The best way to reach me: <a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a></p>
-				<p>LinkedIn: <a href="{{contactInfo.linkedin}}">Profile</a> - I'm fairly inactive on LinkedIn, but certainly connect with me if you would like to talk professionally.</p>
-				<p>Github: <a href="{{contactInfo.github}}">Portfolio</a> - Pretty much everything I've done is on here. Although I haven't contributed to any open source projects, that's something I'd like to do in the future as I become a better programmer.</p>
-				<p>Stack Overflow: <a href="{{contactInfo.stackOverflow}}">Account</a> - Like Github, I want to spend more time on Stack helping people out. Time is so short....</p>
-			</div>
-		</div>
+	
+</div>
+<div class="splash-div contact">
+	<div class="contact-info">
+		<h1>Contact Info</h1>
+		<h2><a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a></h2>
+		<h3>708-567-5289</h3>
+		<ul class="center">
+      <li><a href="{{contactInfo.linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="{{contactInfo.github}}"><i class="fa fa-github"></i></a></li>
+      <li><a href="{{contactInfo.stackOverflow}}"><i class="fa fa-stack-overflow"></i></a></li>
+    </ul>
 	</div>
+</div>
+<div class="splash-div buffer">
+
 </div>
