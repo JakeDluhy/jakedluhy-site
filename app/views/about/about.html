@@ -24,25 +24,36 @@
 	<p>{{paragraph}}</p>
 	</div>
 </div>
-<div class="splash-div projects">
+<div class="splash-div projects" ng-mouseleave="showAll($event)">
 	<h1>Projects</h1>
-	<div class="project-wrapper" ng-repeat="project in projects">
-		<div class="project-image">
-			<a href="{{project.url}}"><img ng-src="{{project.imgURL}}"></a>
+	<div class="project-wrapper">
+		<div class="image-wrapper" ng-repeat="project in projects">
+			<div class="project-image" ng-click="showProject($event)" ng-class="{detailed:detailedView}">
+				<img ng-src="{{project.imgURL}}">
+			</div>
+			<div class="project-info" ng-class="{detailed:detailedView}">
+				<h3><a href="{{project.url}}">{{project.name}}</a></h3>
+				<p>{{project.description}}</p>
+			</div>
+		</div>
+		<div class="refresh-projects" ng-class="{detailed:detailedView}" ng-click="showAll($event)">
+			<i class="fa fa-refresh"></i>
 		</div>
 	</div>
-	
+
 </div>
 <div class="splash-div contact">
 	<div class="contact-info">
 		<h1>Contact Info</h1>
 		<h2><a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a></h2>
 		<h3>708-567-5289</h3>
-		<ul class="center">
-      <li><a href="{{contactInfo.linkedin}}"><i class="fa fa-linkedin-square"></i></a></li>
-      <li><a href="{{contactInfo.github}}"><i class="fa fa-github"></i></a></li>
-      <li><a href="{{contactInfo.stackOverflow}}"><i class="fa fa-stack-overflow"></i></a></li>
-    </ul>
+		<div class="center">
+			<ul>
+	      <li><a href="{{contactInfo.linkedin}}">Linkedin</a> | </li>
+	      <li><a href="{{contactInfo.github}}">Github</a> | </li>
+	      <li><a href="{{contactInfo.stackOverflow}}">Stack Overflow</a></li>
+	    </ul>
+    </div>
 	</div>
 </div>
 <div class="splash-div buffer">
