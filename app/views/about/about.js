@@ -31,6 +31,6 @@ angular.module('myApp.about', ['ngRoute'])
 	}
 	$scope.showAll = function(event)  {
 		$scope.detailedView = false;
-		$(event.currentTarget).find('.active').removeClass('active');
+		$(document).find('.active').removeClass('active');
 	}
 }]);
