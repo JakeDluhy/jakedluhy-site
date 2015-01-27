@@ -280,6 +280,7 @@ body>div {
   display: inline-block;
   float: left;
   list-style: none;
+  margin-left: 4px;
 }
 
 
