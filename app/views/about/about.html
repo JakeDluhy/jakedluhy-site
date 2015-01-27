@@ -17,11 +17,13 @@
 	</div>
 </div>
 <div class="splash-div about">
-	<div class="headshot-container">
-		<img ng-src="{{bio.picURL}}">
-	</div>
-	<div class="info-container" ng-repeat="paragraph in bio.bioContent">
-	<p>{{paragraph}}</p>
+	<div class="about-wrapper">
+		<div class="headshot-container">
+			<img ng-src="{{bio.picURL}}">
+		</div>
+		<div class="info-container" ng-repeat="paragraph in bio.bioContent">
+		<p>{{paragraph}}</p>
+		</div>
 	</div>
 </div>
 <div class="splash-div projects" ng-mouseleave="showAll($event)">
